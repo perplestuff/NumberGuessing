@@ -1,0 +1,29 @@
+<!DOCTYPE javascript>
+<html>
+	<header> 
+		<script>
+		var randomNumber = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
+		</script>
+	</header>
+<body>
+	<script>
+	var guess = true;
+	while (guess) {
+		var userGuess = prompt ("guess a number between 1 and 100.");
+		
+		if (userGuess != randomNumber) {
+			alert ("please try again");
+			if (userGuess > randomNumber) {
+				alert ("go lower");
+			} else {
+				alert ("go higher");
+			}
+			
+		} else {
+			alert ("you have guessed it right");
+			guess = false;
+		}
+	}
+	</script>
+</body>
+</html>
